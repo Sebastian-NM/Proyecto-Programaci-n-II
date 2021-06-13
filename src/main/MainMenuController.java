@@ -57,7 +57,7 @@ public class MainMenuController implements Initializable {
 
     @FXML
     private void btnStartL(ActionEvent event) {
-        
+ 
         ImageView car = new ImageView(new Image("/Images/car.png"));
         PaneRoot.getChildren().addAll(car);
         car.setScaleX(-1);
@@ -65,7 +65,7 @@ public class MainMenuController implements Initializable {
         car.setFitHeight(50);
         car.setFitWidth(100);
         car.setLayoutX(200);
-        car.setLayoutY(200);
+        car.setLayoutY(300);
        
     
         CrossBridgeLeft c = new CrossBridgeLeft(car, mutex, mL1, mL2, mL3);
