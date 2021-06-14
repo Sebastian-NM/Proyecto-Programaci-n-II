@@ -35,7 +35,7 @@ public class CrossBridgeRight implements Runnable{
 //        
         for (int i = 0; i < 50; i++) {
             try {
-                car.setLayoutX(car.getLayoutX()-1);
+                car.setLayoutX(car.getLayoutX()-2.5);
                 Thread.sleep(15);
             } catch (InterruptedException ex) {
                
@@ -46,7 +46,7 @@ public class CrossBridgeRight implements Runnable{
         
         for (int i = 0; i < 50; i++) {
             try {
-                car.setLayoutX(car.getLayoutX()-1);
+                car.setLayoutX(car.getLayoutX()-2.5);
                 Thread.sleep(15);
             } catch (InterruptedException ex) {
                
@@ -59,7 +59,7 @@ public class CrossBridgeRight implements Runnable{
         mutex.espera();
          for (int i = -100; i < 100; i++) {
             try {
-                car.setLayoutX(car.getLayoutX()-1);
+                car.setLayoutX(car.getLayoutX()-2.5);
                 if(i!=0)
                 car.setLayoutY(car.getLayoutY()+(i/(Math.sqrt((Math.pow(i, 2))))));
                 Thread.sleep(15);
@@ -71,24 +71,24 @@ public class CrossBridgeRight implements Runnable{
       
         for (int i = 0; i < 50; i++) {
             try {
-                car.setLayoutX(car.getLayoutX()-1);
+                car.setLayoutX(car.getLayoutX()-2.5);
                 Thread.sleep(15);
             } catch (InterruptedException ex) {
                
             }
         }
         
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 75; i++) {
             try {
-                car.setLayoutX(car.getLayoutX()-1);
+                car.setLayoutX(car.getLayoutX()-2.5);
                 Thread.sleep(15);
             } catch (InterruptedException ex) {
                 
             }
-//        }
+        }
         
        car.setVisible(false);
     }
     
-}
+
 }

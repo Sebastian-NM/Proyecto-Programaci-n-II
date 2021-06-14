@@ -62,10 +62,10 @@ public class MainMenuController implements Initializable {
         PaneRoot.getChildren().addAll(car);
         car.setScaleX(-1);
         car.setScaleY(1);
-        car.setFitHeight(50);
-        car.setFitWidth(100);
-        car.setLayoutX(200);
-        car.setLayoutY(300);
+        car.setFitHeight(100);
+        car.setFitWidth(200);
+        car.setLayoutX(-150);
+        car.setLayoutY(250);
        
     
         CrossBridgeLeft c = new CrossBridgeLeft(car, mutex, mL1, mL2, mL3);
@@ -82,10 +82,10 @@ public class MainMenuController implements Initializable {
         PaneRoot.getChildren().add(car);
         car.setScaleX(1);
         car.setScaleY(1);
-        car.setFitHeight(50);
-        car.setFitWidth(100);
-        car.setLayoutX(600);
-        car.setLayoutY(200);
+        car.setFitHeight(100);
+        car.setFitWidth(200);
+        car.setLayoutX(900);
+        car.setLayoutY(180);
         
         CrossBridgeRight c = new CrossBridgeRight(car, mutex, mR1, mR2, mR3);
         Thread t = new Thread(c);

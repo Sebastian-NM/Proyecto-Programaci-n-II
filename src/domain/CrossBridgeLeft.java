@@ -5,8 +5,6 @@
  */
 package domain;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.scene.image.ImageView;
 
 /**
@@ -35,7 +33,7 @@ public class CrossBridgeLeft implements Runnable{
        
         for (int i = 0; i < 50; i++) {
             try {
-                car.setLayoutX(car.getLayoutX()+1);
+                car.setLayoutX(car.getLayoutX()+2.5);
                 Thread.sleep(15);
             } catch (InterruptedException ex) {
                ;
@@ -45,7 +43,7 @@ public class CrossBridgeLeft implements Runnable{
         
         for (int i = 0; i < 50; i++) {
             try {
-                car.setLayoutX(car.getLayoutX()+1);
+                car.setLayoutX(car.getLayoutX()+2.5);
                 Thread.sleep(15);
             } catch (InterruptedException ex) {
             }
@@ -57,7 +55,7 @@ public class CrossBridgeLeft implements Runnable{
         mutex.espera();
          for (int i = -100; i < 100; i++) {
             try {
-                car.setLayoutX(car.getLayoutX()+1);
+                car.setLayoutX(car.getLayoutX()+2.5);
                 if(i!=0)
                 car.setLayoutY(car.getLayoutY()+(i/(Math.sqrt((Math.pow(i, 2))))));
                 Thread.sleep(15);
@@ -69,15 +67,15 @@ public class CrossBridgeLeft implements Runnable{
          
         for (int i = 0; i < 50; i++) {
             try {
-                car.setLayoutX(car.getLayoutX()+1);
+                car.setLayoutX(car.getLayoutX()+2.5);
                 Thread.sleep(15);
             } catch (InterruptedException ex) {
             }
         }
         
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 75; i++) {
             try {
-                car.setLayoutX(car.getLayoutX()+1);
+                car.setLayoutX(car.getLayoutX()+2.5);
                 Thread.sleep(15);
             } catch (InterruptedException ex) {
            }
