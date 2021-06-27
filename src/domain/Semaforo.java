@@ -24,11 +24,13 @@ public class Semaforo {
          // lo ignora
          }
         }
-        s = s-1;
+//        s = s-1;
+        s = 0;
     }
     
     public synchronized void signal(){
-        s = s+1;
+//        s = s+1;
+        s = 1;
         notify();
     }
 
