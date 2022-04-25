@@ -8,6 +8,7 @@ package domain;
 /**
  *
  * @author LuisGa
+ * y el Sebas
  */
 public class Semaforo {
 
