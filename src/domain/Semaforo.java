@@ -10,7 +10,8 @@ package domain;
  * @author LuisGa
  */
 public class Semaforo {
-    
+
+    //hola mundo
     private int s = 1;
     public Semaforo(int inicial){
         s = inicial;
